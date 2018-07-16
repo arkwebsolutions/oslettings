@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>O S Lettings</title>
+	
+</head>
+
+<body>
+	<!-- Header Showcase -->
+	<header id="showcase" class="grid">
+		<div class="bg-image">
+			<!-- <img src="images/bg-img1.jpg" alt> -->
+		</div>
+
+		<div class="container">			
+			<div class="menu">
+				<nav id="navbar">
+					<a href="index.html" class="navbar-logo">
+						<img src="./images/logo.png">
+					</a>  
+
+					<span class="open-slide">
+						<a href="#" onclick="openSlideMenu()">
+							<svg width="28" height="28">
+								<path d="M0,5 28,5" stroke="#fff" stroke-width="2"/>
+								<path d="M0,14 28,14" stroke="#fff" stroke-width="2"/>
+								<path d="M0,23 28,23" stroke="#fff" stroke-width="2"/>
+							</svg>
+						</a>
+					</span>
+
+					<ul class="navbar-nav">
+						<li><a href="#section-d">Contacts</a></li>
+						<li><a href="#section-c">Services</a></li>
+						<li><a href="#section-b">Properties</a></li>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+
+				<div id="side-menu" class="side-nav">
+					<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+					<a href="index.html">Home</a>
+					<a href="proprties.html">Properties</a>
+					<a href="landlords.html">Landlords</a>
+					<a href="tenants.html">Tenants</a>
+					<a href="contacts.html">Contacts</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="content-wrap">
+			<div class="content-bg">
+				<h2>We are offering the</h2>
+				<h1>Best Estate Deals</h1>
+				<p>Save your time and money</p>
+				<a href="#" id="formBtn" class="btn">Contact Us</a>
+			</div>
+		</div>
+
+		<!-- Pop-up Contact Form -->
+		<div id="popupForm" class="form">
+			<div class="form-content">
+				<div class="form-header">
+					<span class="closeBtn">&times;</span>
+					<h3>Leave your message and we'll get back to you shortly</h3>
+				</div>
+				<div id="wrapperForm">
+					<div class="company-info">
+						<h3>OS Letting</h3>
+						<ul>
+							<li>Address</li>
+							<li>020 74077404</li>
+							<li>oslettslondon@gmail.com</li>
+						</ul>
+					</div>
+					<div class="contact">
+						<form action="https://formcarry.com/s/h_3mSjnfc96" method="POST" accept-charset="UTF-8" >
+							<p>
+								<label>Full Name</label>
+								<input type="text" name="name">
+							</p>
+							<p>
+								<label>Email Address</label>
+								<input type="email" name="email">
+							</p>
+							<p>
+								<label>Phone Number</label>
+								<input type="text" name="phone">
+							</p>
+							<p class="full">
+								<label>Message</label>
+								<textarea name="message" rows="5"></textarea>
+							</p>
+							<p class="full">
+								<button id="submit">Send</button>
+							</p>
+							<p id="confirmation-message">Thanks for contacting OS Lettings.</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<!-- Main Area -->
+	<main id="main">
+		<!-- Section A -->
+		<section id="section-a" class="grid">
+			<div class="content-wrap">
+				<h2 class="content-title">We are Experts in Letting and Renting Properties</h2>
+				<div class="content-text">
+					<p>OSLettings has a wealth of experience when it comes to looking after Landlords. We are a young company staffed by enthusiastic and experienced property professionals and our mission is to change the tired old traditional approach to Lettings & Property Management.
+					We offer a fully comprehensive property Management service - whatever the hour, our friendly London based support team will be happy to handle any request.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section B -->
+		<section id="section-b" class="grid">
+			<h2 class="content-title">Featured Properties</h2>
+			<ul>
+				<li>
+					<div class="card">
+						<img src="images/pexels-photo-276724.jpg" alt="">
+						<div class="card-content">
+							<h3 class="card-title">1 bedroom flat</h3>
+							<p>Verney Road, London, SE16</p>
+							<h4>£1,400 pcm</h4>
+							<h5>£323 pcw (fees apply)</h5>
+						</div>
+					</div>
+
+					<div class="card-btn">
+							<a href="#section-d" class="btn">
+								<img src="images/mail.png"></a>				 
+							<a href="#section-d" class="btn" >
+								<img src="images/phone.png"></a>
+							<a href="#section-d" class="btn" >
+								<img src="images/heart.png"></a>
+					</div>
+
+					<div class="card-btn-full">
+							<a href="#section-d" class="btn">
+								<img src="images/mail.png"></a>
+							<a href="#section-d" class="btn" >
+								Full details</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="card">
+						<img src="images/pexels-photo-164595.jpg" alt="">
+						<div class="card-content">
+							<h3 class="card-title">1 bedroom flat</h3>
+							<p>Verney Road, London, SE16</p>
+							<h4>£1,400 pcm</h4>
+							<h5>£323 pcw (fees apply)</h5>
+						</div>
+					</div>
+
+					<div class="card-btn">
+							<a href="#section-d" class="btn">
+								<img src="images/mail.png"></a>				 
+							<a href="#section-d" class="btn" >
+								<img src="images/phone.png"></a>
+							<a href="#section-d" class="btn" >
+								<img src="images/heart.png"></a>
+					</div>
+
+					<div class="card-btn-full">
+							<a href="#section-d" class="btn">
+								<img src="images/mail.png"></a>
+							<a href="#section-d" class="btn" >
+								Full details</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="card">
+						<img src="images/pexels-photo-210265.jpg" alt="">
+						<div class="card-content">
+							<h3 class="card-title">1 bedroom flat</h3>
+							<p>Verney Road, London, SE16</p>
+							<h4>£1,400 pcm</h4>
+							<h5>£323 pcw (fees apply)</h5>
+						</div>
+					</div>
+
+					<div class="card-btn">
+							<a href="#section-d" class="btn">
+								<img src="images/mail.png" class="my">
+							</a>				 
+							<a href="#section-d" class="btn" >
+								<img src="images/phone.png" class="this">
+							</a>
+							<a href="#section-d" class="btn" >
+								<img src="images/heart.png" class="this">
+							</a>
+					</div>
+
+					<div class="card-btn-full">
+							<a href="#section-d" class="btn">
+								<img src="images/mail.png"></a>
+							<a href="#section-d" class="btn" >
+								Full details</a>
+					</div>
+				</li>
+			</ul>
+		
+			
+		</section>
+
+				<!-- Section C -->
+		<div id="section-c" class="content-wrap-services">
+			<h2 class="content-title">Our Services</h2>
+				<div class="service-content-left">
+					<div class="service-image"><img src="images/key.png" ></div>
+					<h3>Lettings and Sales</h3>
+				</div>
+
+				<div class="service-content-middle">
+					<div class="service-image"><img src="images/management.png"></div>
+					<h3>Property Management</h3>
+				</div>
+
+				<div class="service-content-right">
+					<div class="service-image"><img src="images/blueprint.png"></div>
+					<h3>Additional Services</h3>
+				</div>		
+		
+		</div>
+	
+
+		<!-- Section C -->
+<!-- 		<section id="section-c">
+			<div class="content-wrap-services">
+				<h2 class="content-title">Our Services</h2>
+
+				<div class="service-content-left">
+					<img src="images/key.png">
+					<h3>Lettings and Sales</h3>
+				</div>
+
+				<div class="service-content-middle">
+					<img src="images/management.png">
+					<h3>Property Management</h3>
+				</div>
+
+				<div class="service-content-right">
+					<img src="images/blueprint.png">
+					<h3>Additional Services</h3>
+				</div>
+
+
+			</div>
+		</section> -->
+
+		<!-- Section D -->
+		<section id="section-d" class="grid">
+			<div class="box">
+				
+				<h2 class="content-title"><a href="index.html">O S Lettings</a></h2>
+				<p><img src="images/phone.png">020 74077404</p>
+				<p><img src="images/mail.png">oslettslondon@gmail.com</p>
+			</div>
+			<div class="box">
+				<h2 class="content-title">Contact Us</h2>
+				<p>We'd love to hear from you.</p>
+				<a href="#" id="formBtnBottom" class="btn">Contact Us</a>
+			</div>
+		</section>
+	
+	</main>
+
+	<footer id="main-footer">
+		OS Lettings - Company number 08631597 - 49 Skyline Village Skylines Village, Limeharbour, London, England, E14 9TS
+	</footer> 
+
+	<script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script> 
+	<script src="js/main.js"></script>
+</body>
+</html>
