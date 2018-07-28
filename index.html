@@ -121,31 +121,41 @@
 			</div>
 		</section>
 
-		<!-- Section B -->
-		<div id="dialog" class="img-dialog">
-			<div class="gallery-container">
-			  <img class="mySlides" src="properties/img-02.jpg" style="width:100%">
-			  <img class="mySlides" src="properties/img-01.jpg" style="width:100%">
-			  <img class="mySlides" src="properties/img-03.jpg" style="width:100%">
-			  <img class="mySlides" src="properties/img-04.jpg" style="width:100%">
-			  <img class="mySlides" src="properties/img-05.jpg" style="width:100%">
-			  <img class="mySlides" src="properties/img-06.jpg" style="width:100%">
-			  <img class="mySlides" src="properties/img-07.jpg" style="width:100%">
-			  <img class="mySlides" src="properties/img-08.jpg" style="width:100%">
-			  <img class="mySlides" src="properties/img-09.jpg" style="width:100%">
-
-			  <button class="gallery-button gallery-button-left" onclick="plusDivs(-1)">&#10094;</button>
-			  <button class="gallery-button gallery-button-right" onclick="plusDivs(1)">&#10095;</button>
-			</div>
-		</div>
-
-
 		<section id="section-b" class="grid">
 			<h2 class="content-title">Featured Properties</h2>
 			<ul>
 				<li>
 					<div class="card">
-						<img src="properties/img-02.jpeg" alt="">
+						<div id="slideshow-left">
+							<div>
+								<img class="mySlides" src="properties/left/01.jpg" style="width:100%">
+							</div>
+							<div>
+			  					<img class="mySlides" src="properties/left/02.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/left/03.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/left/04.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/left/05.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/left/06.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/left/07.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/left/08.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/left/09.jpg" style="width:100%">
+			  				</div>
+			  			</div>
+			  			
 						<div class="card-content">
 							<h3 class="card-title">3 bedrooms house - SE16</h3>
 							<p>Three bedroom House in London SE16, 10 mins from Bermondsey tube station. This well decorated house comprises of two double, one single bedroom, fully fitted kitchen which leads into a well presented garden and a large living room. The property also has a private driveway with room for a vehicle.</p>
@@ -173,7 +183,30 @@
 
 				<li>
 					<div class="card">
-						<img src="images/pexels-photo-164595.jpg" alt="">
+						<div id="slideshow-middle">
+							<div>
+								<img class="mySlides" src="properties/middle/01.jpg" style="width:100%">
+							</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/middle/02.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/middle/03.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/middle/04.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/middle/05.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/middle/06.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/middle/07.jpg" style="width:100%">
+			  				</div>
+			  			</div>
+
 						<div class="card-content">
 							<h3 class="card-title">1 bedroom flat - SE16</h3>
 							<p>One bedroom Flat in London SE16, located 12 minutes from Canada Water tube Station, 5 minutes from Southwark Park and 7 minutes from Surry Quays Shopping centre. 
@@ -202,7 +235,23 @@
 
 				<li>
 					<div class="card">
-						<img src="images/pexels-photo-210265.jpg" alt="">
+						<div id="slideshow-right">
+							<div>
+								<img class="mySlides" src="properties/right/01.jpg" style="width:100%">
+							</div>
+							<div>
+			  					<img class="mySlides" src="properties/right/02.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/right/03.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/right/04.jpg" style="width:100%">
+			  				</div>
+			  				<div>
+			  					<img class="mySlides" src="properties/right/05.jpg" style="width:100%">
+			  				</div>
+			  			</div>
 						<div class="card-content">
 							<h3 class="card-title">2 bedrooms flat - SE16</h3>
 							<p>Two bedrooms Flat in London SE16. Located 5 minutes from Bermondsey tube Station. This outstanding ground floor property comprises a master large bedroom and a single bedroom. This well decorated flat, fully fitted kitchen and large living room. Communal garden and parking available for single car.</p>
@@ -320,25 +369,26 @@
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
 
-
   <script type="text/javascript">
-  	var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
+	customSlide('#slideshow-left');
+	customSlide('#slideshow-middle');
+	customSlide('#slideshow-right');
 
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
-}
+	function customSlide(id) {
+		$(id.concat(' > div:gt(0)')).hide();
+
+		setInterval(function() {
+		  $(id.concat(' > div:first'))
+		    .fadeOut(6000)
+		    .next()
+		    .fadeIn(6000)
+		    .end()
+		    .appendTo(id);
+		}, 6000);	
+	}
   </script>
+
+
 </body>
 </html>
