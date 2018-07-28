@@ -3,7 +3,8 @@ function openSlideMenu(){
 	document.getElementById('main').style.marginLeft='250px';
 }
 
-function closeSideMenu(){
+function closeSideMenu(obj){
+	window.location.hash = obj.getAttribute("href");
 	document.getElementById('side-menu').style.width='0px';
 	document.getElementById('main').style.marginLeft='0px';
 }
@@ -16,20 +17,6 @@ var formBtnBottom = document.getElementById('formBtnBottom');
 
 // Get close button
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
-
-var confirmationId = document.getElementById('submit');
-
-
-function displayConfirmationMessage() {
-	// setTimeout(closeForm, 4000);
-	// document.getElementById('confirmation-message').style.display='inline';
-	document.getElementById('test').style.display='inline';
-}
-
-
-if (confirmationId != null) {
-	confirmationId.addEventListener('click', displayConfirmationMessage);	
-}
 
 if (formBtn != null) {
 	//Listen for click
@@ -44,7 +31,6 @@ if (closeBtn != null) {
 	//Listen for close click
 	closeBtn.addEventListener('click', closeForm);
 }
-
 
 //Listen for outside click
 window.addEventListener('click', outsideClick);
@@ -74,9 +60,23 @@ $(document).ready(function(){
 	}
 });
 
+// Temp Photo Gallery Popup
+$(document).ready(function () {
+	$("#dialog").dialog({
+		autoOpen : false, modal : true, show : "blind", hide : "blind"
+	});
+});
 
+$(document).ready(function () {
+    $('#featured-property-left').click(function () {
+        $('#dialog').dialog('open');
+        return false;
+    });
+});
+
+// Photo redirection
 var redirect = function(){
-  window.location.href = "http://oslettings.co.uk/uat/index.html";
+  window.location.href = "http://oslettings.co.uk/index.html";
 };
 
 
